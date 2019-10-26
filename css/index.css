@@ -3,5 +3,48 @@ body {
 }
 
 h1 {
-    color: blueviolet
+    color: rgb(55, 0, 179);
+    transition: color 0.5s ease-in-out;
+}
+
+/*id = title 인 태그 css 적용*/
+/* #title {
+    color: palegoldenrod
+} */
+
+.btn {
+    cursor: pointer
+}
+
+.clicked {
+    color: #03DAC6;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    animation: fadeIn .5s linear
 }
